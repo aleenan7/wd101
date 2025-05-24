@@ -1,0 +1,133 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+.container {
+  width: 100%;
+  max-width: 500px;
+}
+
+.form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  font-weight: bold;
+  min-width: 120px;
+  /* Aligns labels neatly */
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"],
+.form-group input[type="date"] {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  background-color: #f2f2f2;
+  /* ✅ Ash background */
+}
+
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  /* ⬅ ensures left alignment */
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+
+.checkbox-group input {
+  margin-right: 10px;
+}
+
+button[type="submit"] {
+  padding: 10px 24px;
+  background-color: #28a745;
+  color: white;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 128, 0, 0.2);
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+
+button[type="submit"]:hover {
+  background-color: #218838;
+  transform: scale(1.03);
+}
+
+.form button {
+  margin-top: 10px;
+}
+
+.entries-table {
+  background: white;
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  width: 800px;
+
+  box-sizing: border-box;
+  overflow-x: auto;
+}
+
+.entries-table h3 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  /* Ensures table cells don't overflow */
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  word-wrap: break-word;
+  word-break: break-word;
+}
+
+th {
+  background-color: #f2f2f2;
+}
